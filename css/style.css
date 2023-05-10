@@ -26,11 +26,17 @@ html {
     text-decoration: none;
     font-weight: 700;
 }
+.link-list a:hover{
+    text-decoration: underline;
+}
 .button {
     border-radius: 99px;
     border: none;
     padding: 10px 20px;
     font-size: 1.3em;
+}
+.button:hover {
+    transform: scale(1.05);
 }
 .button-small {
     font-size: 1em;
@@ -63,17 +69,17 @@ header .link-list > * {
     display: inline;
 }
 header #logo {
-    width: 25%;
+    width: 15%;
 }
 header #navbar {
-    width: 50%;
+    width: 70%;
     justify-content: space-around;
 }
 header #navbar nav ul > *{
-    padding: 0 5px;
+    padding: 0 10px;
 }
 header #login {
-    width: 25%;
+    width: 15%;
     justify-content: end;
 }
 
@@ -96,6 +102,10 @@ header #header-bottom-section h1 {
 header #header-bottom-section p {
     font-size: 1.1em;
     margin-bottom: 20px;
+}
+header #header-bottom-section .my-buttons {
+    display: flex;
+    justify-content: space-around;
 }
 
 
