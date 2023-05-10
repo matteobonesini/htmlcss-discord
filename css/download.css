@@ -1,0 +1,27 @@
+/* MAIN */
+main .my-row {
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+main .col-1-2 {
+    width: calc(50% - 20px);
+}
+main .card {
+    background-color: #dedddd;
+    margin: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+main .platform-title {
+    color: black;
+    font-size: 1.5em;
+}
+main .card img {
+    padding: 20px;
+    height: 325px;
+    width: 80%;
+}
+main .card .main-card > * {
+    margin: 10px 0;
+}
