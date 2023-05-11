@@ -116,6 +116,9 @@ main > * .container {
 main section:not(#fourth) > .container {
     display: flex;
 }
+main section:not(#fourth) .waves > .container {
+    display: flex;
+}
 main .main-img {
     width: 90%;
 }
@@ -156,31 +159,35 @@ main  .section-bigger-bottom .subtitle-container .background-stars {
     margin-bottom: -15px;
 }
 
-main section:nth-child(even) {
+main section .waves {
     background-color: #d3d3d3;
 }
 
-main section#second {
-    margin: 90px 0;
-}
 main section#second::before {
-    content: url('../img/wave.svg');
+    content: "";
+    height: 50px;
     display: block;
-    transform: translate(0, -90%);
+    background-image: url('../img/wave.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 main section#second::after {
-    content: url('../img/wave.svg');
+    content: "";
+    height: 50px;
     display: block;
-    transform: translate(0, 90%) rotate(180deg);
+    background-image: url('../img/wave.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transform: rotate(180deg);
 }
 
-main section#fourth {
-    margin-top: 90px;
-}
 main section#fourth::before {
-    content: url('../img/wave.svg');
+    content: "";
+    height: 50px;
     display: block;
-    transform: translate(0, -90%);
+    background-image: url('../img/wave.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 /* FOOTER */
